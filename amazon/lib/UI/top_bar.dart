@@ -2,53 +2,15 @@ import 'package:amazon/models/global.dart';
 import 'package:flutter/material.dart';
 
 class TopBar extends StatelessWidget {
+  Drawer drawer = new Drawer();
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 15),
       color: dark_blue,
-      height: 168,
+      height: 70,
       child: Column(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    IconButton(
-                      icon: Icon(
-                        Icons.menu,
-                        color: Colors.white,
-                        size: 30,
-                      ),
-                      onPressed: () {},
-                    ),
-                    Container(
-                      width: 100,
-                      child: Image(
-                          image:
-                              AssetImage('lib/assets/amazon-logo-white.png')),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                child: Row(
-                  children: <Widget>[
-                    IconButton(
-                      icon: Icon(Icons.mic, color: Colors.white),
-                      onPressed: () {},
-                    ),
-                    IconButton(
-                      icon: Icon(Icons.shopping_cart, color: Colors.white),
-                      onPressed: () {},
-                    )
-                  ],
-                ),
-              )
-            ],
-          ),
           Container(
             padding: EdgeInsets.only(left: 5, right: 5),
               margin: EdgeInsets.all(5),
